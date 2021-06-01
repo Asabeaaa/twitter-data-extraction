@@ -52,8 +52,8 @@ result is a json file that contains different objects that describe the tweets y
 3. Save_results_as_csv() function
 - takes one parameter which is the dataframe that was returned for the previous function and then converts it into a csv file
 
-###### Output
-## Save_results_as_csv() returns a csv file with the following naming format: tweets_downloaded_yymmdd_hhmmss.csv (where ‘yymmdd_hhmmss’ is the current 	timestamp) 
+# Output
+###### Save_results_as_csv() returns a csv file with the following naming format: tweets_downloaded_yymmdd_hhmmss.csv (where ‘yymmdd_hhmmss’ is the current 	timestamp) 
 the current time stamp is generated automatically using datetime.datetime.now().strftime(time_format), where time_format is the specified format you want the date to be in ("%d-%m-%Y_%H-%M-%S")
 
 
