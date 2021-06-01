@@ -1,7 +1,5 @@
-# twitter-data-extraction
-This is a script that downloads tweets data on a specific search topic (Endsars) using the tweepy standard search API. 
-
-#Description
+# Twitter Data Extraction:Project Overview
+*Created a script that downloads tweets data on a specific search topic (Endsars) using the tweepy standard search API. 
 When this python script is run it makes a call to the Twitter Api using tweepy and returns a list of tweets with the word Endsars contained in it's text, converts the information we need which is stored in json objects into a dataframe and then stores the output in a csv file.
 
 #Required dependencies to install
