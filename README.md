@@ -32,18 +32,31 @@ In order to receive credentials, you must apply to become a Twitter developer .(
 1. Passing credentials from Twitter Developers portal into python script
 ###### ![Capture10](https://user-images.githubusercontent.com/65185008/120348665-3b500800-c2b2-11eb-90f1-7af256e500b0.PNG)
 
+2. scrape_tweets() function
+- takes 2 parameters the text_query(EndSars), word used to filter tweets and the count which specifies the number of tweets you want to return from the search and coverts it into a dataframe after the needed information is taken from the returned tweets. This function returns the final dataframe created.
+- The following attributes were gotten from the tweets extracted: 
+-- Tweet text 
+-- Tweet id 
+-- Likes count 
+-- Username 
+-- Screenname 
+-- Location 
+-- Friends count 
+-- Verification status 
+-- Description 
+-- Followers count
 
-The following attributes were gotten from the tweets extracted: 
-Tweet text 
-Tweet id 
-Likes count 
-Username 
-Screenname 
-Location 
-Friends count 
-Verification status 
-Description 
-Followers count
+###### ![Capture11](https://user-images.githubusercontent.com/65185008/120349480-009a9f80-c2b3-11eb-8335-622ef469e8bd.PNG)
+result is a json file that contains different objects that describe the tweets you have extracted, such as, tweet id, date tweeted,number of likes,all information related to the person who tweeted it,such as; the screen name, username,number of followers, etc. You can retrieve objects needed for your task
+
+3. Save_results_as_csv() function
+- takes one parameter which is the dataframe that was returned for the previous function and then converts it into a csv file
+
+###### Output
+## Save_results_as_csv() returns a csv file with the following naming format: tweets_downloaded_yymmdd_hhmmss.csv (where ‘yymmdd_hhmmss’ is the current 	timestamp) 
+the current time stamp is generated automatically using datetime.datetime.now().strftime(time_format), where time_format is the specified format you want the date to be in ("%d-%m-%Y_%H-%M-%S")
+
+
 
 
 
