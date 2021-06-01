@@ -19,10 +19,16 @@ In order to receive credentials, you must apply to become a Twitter developer .(
 - import pandas as pd
 - import datetime
 
-## Project was divided into 3 parts:
+###### Project was divided into 3 parts:
 1. Getting credentials from Twitter Developers portal
 2. scrape_tweets() that has the following parameters: Search topic ,The number of tweets to download per request and returns a dataframe.
-3. Save_results_as_csv() that has the following parameters: the dataframe from the above function and returns a csv file with the following naming format: tweets_downloaded_yymmdd_hhmmss.csv (where ‘yymmdd_hhmmss’ is the current 	timestamp)  
+3. Save_results_as_csv() that has the following parameters: the dataframe from the above function and returns a csv file with the following naming format: tweets_downloaded_yymmdd_hhmmss.csv (where ‘yymmdd_hhmmss’ is the current 	timestamp) 
+
+## Code and Resources used 
+1. Twitter API docs: https://developer.twitter.com/en/docs/twitter-api/v1/tweets/search/api-reference/get-search-tweets 
+2. Tweepy docs: http://docs.tweepy.org/en/latest/api.html 
+
+## Activities done 
 
 The following attributes were gotten from the tweets extracted: 
 Tweet text 
@@ -35,12 +41,6 @@ Friends count
 Verification status 
 Description 
 Followers count
-
-
-
-
-
-
 
 
 
