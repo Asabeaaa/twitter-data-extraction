@@ -2,11 +2,10 @@ import tweepy
 import pandas as pd
 import datetime
 
-
-consumer_key = "pl13zULs9D5CZvvywVw9Qe9BU"
-consumer_secret = "bWcUYdpqsjDOrgAmUV42nK81uZDi0bZ4C9RDHxDcwyUAAI8KaN"
-access_token = "814433953641824256-JNNefTPysP2UVNpu4aY6Y6qDbnNydLr"
-access_token_secret = "9t1WaQbco5tE8gMMLCPTl2u0AwxVNHCCmVaPZrDePywc0"
+consumer_key = "XXXXXX"
+consumer_secret = "XXXXXX"
+access_token = "XXXXXX"
+access_token_secret = "XXXXXX"
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -40,7 +39,7 @@ class Twitter_etl:
 
 if __name__ == "__main__":
     tweets = Twitter_etl()
-    tweets_dataframe = tweets.scrape_tweets(text_query='Endsars',count=20)
+    tweets_dataframe = tweets.scrape_tweets(text_query='Endsars',count=1000)
     tweets_csv=tweets.save_results_as_csv(dataframe=tweets_dataframe)
     print(tweets_dataframe)
 
